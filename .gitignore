@@ -1,0 +1,35 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Ambiente
+.env
+.env.*
+*.local
+
+# Cache e logs
+*.log
+/tmp/
+.cache/
+logs/
+sessions/
+debugbar/
+
+# Dependências (caso use Composer)
+vendor/
+
+# IDEs e editores
+.vscode/
+.idea/
+nbproject/
+*.sublime-project
+*.sublime-workspace
+
+# Backups e arquivos temporários
+*.bak
+*.tmp
+*.swp
+
+# Arquivos de upload ou gerados pelo sistema
+uploads/
+storage/
