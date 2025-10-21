@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAuthn (Chave de Acesso) Demo</title>
+<meta name="author" content="Onivaldo Miquelino">      
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/css/style.css"> 
+</head>
+<body class="flex-col">
+    <div class="w-full max-w-md bg-white p-8 rounded-xl shadow-2xl border border-gray-100">
+        <h1 class="text-3xl font-bold mb-6 text-gray-800 text-center">🔐 Chaves de Acesso WebAuthn</h1>
+        <p class="text-sm text-gray-600 mb-6 text-center">Demonstração do fluxo de Registro e Login com FIDO2 (Passkeys).</p>
+
+        <!-- Mensagens de Status e Erro -->
+        <div id="status-message" class="p-3 text-sm rounded-lg mb-4 hidden" role="alert"></div>
+
+        <!-- Formulário de Ação -->
+        <div class="space-y-4">
+            <input type="text" id="username" placeholder="Nome de Usuário (Ex: user@example.com)"
+                   class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition duration-150 shadow-sm">
+            
+            <button id="register-btn" onclick="startRegistration()"
+                    class="w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-200 shadow-md flex items-center justify-center space-x-2 disabled:bg-blue-400 disabled:cursor-not-allowed">
+                <span>Registrar Nova Chave de Acesso</span>
+            </button>
+            
+            <button id="login-btn" onclick="startAuthentication()"
+                    class="w-full py-3 px-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition duration-200 shadow-md flex items-center justify-center space-x-2 disabled:bg-green-400 disabled:cursor-not-allowed">
+                <span>Fazer Login com Chave de Acesso</span>
+            </button>
+        </div>
+        
+        <hr class="my-6 border-gray-200">
+        
+        <div class="text-xs text-gray-500">
+            <p><strong>Requisito de Segurança:</strong> Esta API só funciona em **HTTPS** ou em `http://localhost`.</p>
+            <p><strong>Observação PHP:</strong> O backend em `auth_server.php` utiliza a **simulação** da verificação de assinatura para fins de demonstração, e armazena credenciais na Sessão PHP.</p>
+        </div>
+
+    </div>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
