@@ -22,11 +22,15 @@
 ![GitHub forks](https://img.shields.io/github/forks/NinoMiquelino/password-strength-checker?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/NinoMiquelino/password-strength-checker)
 
-​​💻 **Visão Geral do Projeto**
-​Este projeto é uma demonstração didática e prática do fluxo de Autenticação Sem Senha (Passkeys ou Chaves de Acesso) utilizando o padrão WebAuthn (FIDO2).
-​O objetivo principal é ilustrar o processo completo de Registro e Login criptográfico, mostrando a interação entre o navegador (cliente), a API WebAuthn e o servidor PHP.
+---
 
-​⚠️ Requisito de Segurança: Devido às exigências da API WebAuthn, esta demonstração só pode ser executada em ambiente HTTPS (produção) ou em http://localhost (desenvolvimento).
+## 💻 Visão Geral do Projeto
+
+Este projeto é uma demonstração didática e prática do fluxo de **Autenticação Sem Senha (Passkeys ou Chaves de Acesso)** utilizando o padrão **WebAuthn (FIDO2)**.
+
+O objetivo principal é ilustrar o processo completo de **Registro e Login criptográfico**, mostrando a interação entre o navegador (cliente), a API WebAuthn e o servidor PHP.
+
+⚠️ **Requisito de Segurança:** Devido às exigências da API WebAuthn, esta demonstração só pode ser executada em ambiente **HTTPS** (produção) ou em `http://localhost` (desenvolvimento).
 
 ---
 
